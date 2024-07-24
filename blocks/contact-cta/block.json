@@ -1,0 +1,26 @@
+
+{
+  "name": "acf/contact-cta",
+  "title": "Contact CTA",
+  "editorStyle": [
+    "file:../../public/blocks/contact-cta/contact-cta.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/contact-cta/preview.png"
+                    }
+    }
+  },
+  "icon": "feedback",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "contact-cta.php"
+  },
+  "supports": {}
+}
+
+

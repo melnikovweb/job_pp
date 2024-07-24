@@ -1,0 +1,24 @@
+{
+    "name": "acf/full-width-image-block",
+    "title": "full-width-image-block",
+    "description": "Full width image block",
+    "editorStyle": [
+      "file:../../public/blocks/full-width-image-block/full-width-image-block.css"
+    ],
+    "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/full-width-image-block/preview.png"
+                    }
+    }
+  },
+    "icon": "table-col-before",
+    "acf": {
+      "mode": "auto",
+      "renderTemplate": "full-width-image-block.php"
+    },
+    "supports": {}
+  }

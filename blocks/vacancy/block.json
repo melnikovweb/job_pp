@@ -1,0 +1,12 @@
+{
+  "name": "acf/vacancy",
+  "title": "Vacancy",
+  "editorStyle": [
+    "file:../../public/blocks/vacancy/vacancy.css"
+  ],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "vacancy.php"
+  },
+  "supports": {}
+}

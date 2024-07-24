@@ -1,0 +1,35 @@
+@use 'sass:meta';
+
+@layer libs {
+  @include meta.load-css('choices.js/src/styles/choices');
+}
+
+.choices {
+  $self: &;
+
+  @apply m-0 w-full;
+
+  &__list {
+    @apply px-0;
+  }
+
+  &__inner {
+    @apply h-11 w-full px-4 text-gray placeholder-gray outline-offset-2 font-b2 md:h-12 xl:h-13;
+
+    border: 1px solid var(--choices-border-color, theme('colors.gray.800'));
+    border-radius: var(--choices-rounded, theme('spacing.3'));
+  }
+
+  &__list--dropdown {
+    border: 1px solid theme('colors.gray.800');
+    border-radius: theme('spacing.4');
+
+    &:not(:where(.is-flipped &)).is-active {
+      top: calc(100% + theme('spacing.2'));
+    }
+
+    &:where(.is-flipped &).is-active {
+      bottom: calc(100% + theme('spacing.2'));
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "plugins": [
+    "@babel/syntax-dynamic-import",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@shared": "./src/shared/",
+          "@services": "./src/shared/services/",
+        }
+      }
+    ]
+  ],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "modules": false
+      }
+    ]
+  ]
+}

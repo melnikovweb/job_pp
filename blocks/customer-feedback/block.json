@@ -1,0 +1,24 @@
+{
+  "name": "acf/customer-feedback",
+  "title": "Customer feedback block",
+  "description": "Block that show customer feedback",
+  "editorStyle": [
+    "file:../../public/blocks/customer-feedback/customer-feedback.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/customer-feedback/preview.png"
+                    }
+    }
+  },
+  "icon": "quote",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "customer-feedback.php"
+  },
+  "supports": {}
+}

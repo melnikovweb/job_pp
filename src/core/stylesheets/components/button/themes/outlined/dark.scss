@@ -1,0 +1,46 @@
+.button-outlined-dark {
+  --button-color: theme('colors.blue.DEFAULT');
+  --button-bg: theme('colors.transparent');
+  --button-arrow-border: theme('colors.blue.DEFAULT');
+  --button-arrow-color: theme('colors.blue.DEFAULT');
+  --button-arrow-bg: theme('colors.transparent');
+
+  &:where(:not([class*='button-arrow'])) {
+    --button-border: theme('colors.current');
+  }
+
+  &:where([class*='button-arrow']) {
+    --button-border: theme('colors.transparent');
+  }
+
+  @apply button-theme;
+
+  &:where(:hover, .group:hover *) {
+    &:where(:not([class*='button-arrow'])) {
+      --button-border: theme('colors.blue.DEFAULT');
+      --button-color: theme('colors.white');
+      --button-bg: theme('colors.blue.DEFAULT');
+    }
+
+    &:where([class*='button-arrow']) {
+      --button-arrow-color: theme('colors.white');
+      --button-arrow-bg: theme('colors.gray.DEFAULT');
+    }
+  }
+
+  &.disabled,
+  &:disabled,
+  &[data-disabled='true'] {
+    &:where(:not([class*='button-arrow'])) {
+      --button-border: theme('colors.gray.400');
+      --button-color: theme('colors.white');
+      --button-bg: theme('colors.gray.400');
+    }
+
+    &:where([class*='button-arrow']) {
+      --button-color: theme('colors.gray.600');
+      --button-arrow-color: theme('colors.gray.600');
+      --button-arrow-border: theme('colors.gray.600');
+    }
+  }
+}

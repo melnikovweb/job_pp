@@ -1,0 +1,22 @@
+{
+    "name": "acf/four-images",
+    "title": "Four images",
+    "description": "Section with four random images",
+    "editorStyle": [ "file:../../public/blocks/four-images/four-images.css" ],
+    "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/four-images/preview.png"
+                    }
+    }
+  },
+    "icon": "image-flip-vertical",
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "four-images.php"
+    },
+    "supports": {}
+}

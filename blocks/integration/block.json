@@ -1,0 +1,24 @@
+{
+  "name": "acf/integration",
+  "title": "Integration block",
+  "description": "Integration block.",
+  "editorStyle": [
+    "file:../../public/blocks/integration/integration.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/integration/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "integration.php"
+  },
+  "supports": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "acf/statistic",
+  "title": "Statistic",
+  "description": "Block that show statistic of company and etc.",
+  "editorStyle": [
+    "file:../../public/blocks/statistic/statistic.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/statistic/preview.png"
+                    }
+    }
+  },
+  "icon": "table-col-before",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "statistic.php"
+  },
+  "supports": {}
+}
+
+

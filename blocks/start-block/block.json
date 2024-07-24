@@ -1,0 +1,24 @@
+{
+  "name": "acf/start-block",
+  "title": "Start block",
+  "description": "Start block.",
+  "editorStyle": [
+    "file:../../public/blocks/start-block/start-block.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/start-block/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "start-block.php"
+  },
+  "supports": {}
+}

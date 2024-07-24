@@ -1,0 +1,24 @@
+{
+  "name": "acf/conversion-section",
+  "title": "Conversion Block",
+  "description": "Block Conversion",
+  "editorStyle": [
+    "file:../../public/blocks/conversion-section/conversion-section.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/conversion-section/preview.png"
+                    }
+    }
+  },
+  "icon": "quote",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "conversion-section.php"
+  },
+  "supports": {}
+}

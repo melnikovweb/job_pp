@@ -1,0 +1,24 @@
+{
+  "name": "acf/simple-tabs",
+  "title": "Simple tabs",
+  "description": "Simple tabs.",
+  "editorStyle": [
+    "file:../../public/blocks/simple-tabs/simple-tabs.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/simple-tabs/preview.png"
+                    }
+    }
+  },
+  "icon": "admin-comments",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "simple-tabs.php"
+  },
+  "supports": {}
+}

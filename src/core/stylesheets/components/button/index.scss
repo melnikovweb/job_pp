@@ -1,0 +1,8 @@
+@use 'sass:meta';
+
+@layer components {
+  @include meta.load-css('core');
+  @include meta.load-css('sizes');
+  @include meta.load-css('themes/primary');
+  @include meta.load-css('themes/outlined');
+}

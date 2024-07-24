@@ -1,0 +1,24 @@
+{
+  "name": "acf/achievements-review",
+  "title": "Achievements review",
+  "description": "Block that show achievements",
+  "editorStyle": [
+    "file:../../public/blocks/achievements-review/achievements-review.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/achievements-review/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "achievements-review.php"
+  },
+  "supports": {}
+}

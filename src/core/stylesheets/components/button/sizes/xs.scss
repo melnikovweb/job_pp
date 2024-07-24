@@ -1,0 +1,25 @@
+.button-xs {
+  @apply button;
+
+  @media (screen('xl')) {
+    --button-height: theme('spacing.9');
+  }
+}
+
+.button-arrow-xs {
+  --button-arrow-position: 1 / 1;
+
+  @apply button-arrow encoded-arrow-right;
+
+  @media (screen('md')) {
+    --button-arrow-size: theme('spacing.8');
+  }
+}
+
+.button-icon-xs {
+  @apply button-icon;
+
+  @media (screen('md')) {
+    --button-size: theme('spacing.10');
+  }
+}

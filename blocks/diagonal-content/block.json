@@ -1,0 +1,26 @@
+{
+  "name": "acf/diagonal-content",
+  "title": "Diagonal content",
+  "description": "Block where content placed by diagonal from left to right.",
+  "editorStyle": [
+    "file:../../public/blocks/diagonal-content/diagonal-content.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/diagonal-content/preview.png"
+                    }
+    }
+  },
+  "icon": "text",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "diagonal-content.php"
+  },
+  "supports": {}
+}
+
+

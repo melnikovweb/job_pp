@@ -1,0 +1,27 @@
+.button-primary-white {
+  --button-border: theme('colors.white');
+  --button-color: theme('colors.gray.DEFAULT');
+  --button-bg: theme('colors.white');
+  --button-arrow-bg: theme('colors.yellow.DEFAULT');
+  --button-arrow-color: theme('colors.blue.DEFAULT');
+  --button-arrow-border: theme('colors.yellow.DEFAULT');
+
+  @apply button-theme;
+
+  &:hover {
+    --button-bg: theme('colors.blue.600');
+    --button-color: theme('colors.white');
+    --button-border: theme('colors.blue.600');
+  }
+
+  &.disabled,
+  &:disabled,
+  &[data-disabled='true'] {
+    --button-bg: theme('colors.gray.400');
+    --button-border: theme('colors.gray.400');
+    --button-color: theme('colors.white');
+    --button-arrow-bg: theme('colors.white / 40%');
+    --button-arrow-color: theme('colors.gray.400');
+    --button-arrow-border: theme('colors.gray.400');
+  }
+}

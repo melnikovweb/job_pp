@@ -1,0 +1,34 @@
+@layer components {
+  .container {
+    --container-width: 1920px;
+    --container-offset: theme(spacing.4);
+    --container-margin: max(var(--container-offset), calc((100vw - var(--container-width)) / 2));
+    --container-gutter: theme('spacing.4');
+    --container-columns: 2;
+
+    @apply w-full overflow-x-clip;
+
+    padding-inline: var(--container-margin);
+
+    @media (screen('sm')) {
+      --container-offset: theme(spacing.12);
+      --container-gutter: theme('spacing.6');
+      --container-columns: 4;
+    }
+
+    @media (screen('md')) {
+      --container-offset: theme(spacing.16);
+      --container-gutter: theme('spacing.8');
+      --container-columns: 8;
+    }
+
+    @media (screen('lg')) {
+      --container-columns: 12;
+    }
+
+    @media (screen('2xl')) {
+      --container-offset: theme(spacing.30);
+      --container-gutter: theme('spacing.10');
+    }
+  }
+}

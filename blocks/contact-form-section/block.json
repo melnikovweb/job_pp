@@ -1,0 +1,24 @@
+{
+  "name": "acf/contact-form-section",
+  "title": "Contact Form section",
+  "description": "",
+  "editorStyle": [
+    "file:../../public/blocks/onboarding/contact-form-section.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/contact-form-section/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "contact-form-section.php"
+  },
+  "supports": {}
+}

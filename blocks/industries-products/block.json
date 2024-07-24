@@ -1,0 +1,24 @@
+{
+  "name": "acf/industries-products",
+  "title": "Industries products block",
+  "description": "Industries products block.",
+  "editorStyle": [
+    "file:../../public/blocks/industries-products/industries-products.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/industries-products/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "industries-products.php"
+  },
+  "supports": {}
+}

@@ -1,0 +1,23 @@
+{
+    "name": "SECRET/SECRET",
+    "description": "SECRET website",
+    "type": "wordpress-site",
+    "authors": [
+        {
+            "name": "SECRET team"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SECRET\\Includes\\": "includes/",
+            "SECRET\\Blocks\\": "blocks/",
+            "SECRET\\Components\\": "template-parts/components/",
+            "SECRET\\Content\\": "template-parts/content/",
+            "SECRET\\Layouts\\": "template-parts/layouts/",
+            "SECRET\\Templates\\": "template-parts/templates/"
+        }
+    }
+}

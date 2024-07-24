@@ -1,0 +1,24 @@
+{
+  "name": "acf/banner-with-image",
+  "title": "Banner with image",
+  "description": "Block that show banner with image",
+  "editorStyle": [
+    "file:../../public/blocks/banner-with-image/banner-with-image.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/banner-with-image/preview.png"
+                    }
+    }
+  },
+  "icon": "dashicons-format-aside",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "banner-with-image.php"
+  },
+  "supports": {}
+}

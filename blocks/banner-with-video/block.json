@@ -1,0 +1,24 @@
+{
+  "name": "acf/banner-with-video",
+  "title": "Banner with video",
+  "description": "Block that show banner with video",
+  "editorStyle": [
+    "file:../../public/blocks/banner-with-video/banner-with-video.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/banner-with-video/preview.png"
+                    }
+    }
+  },
+  "icon": "dashicons-format-aside",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "banner-with-video.php"
+  },
+  "supports": {}
+}

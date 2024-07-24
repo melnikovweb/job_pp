@@ -1,0 +1,24 @@
+{
+  "name": "acf/industries",
+  "title": "Industries block",
+  "description": "Industries block.",
+  "editorStyle": [
+    "file:../../public/blocks/industries/industries.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/industries/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "industries.php"
+  },
+  "supports": {}
+}

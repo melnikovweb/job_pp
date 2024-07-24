@@ -1,0 +1,25 @@
+{
+    "name": "acf/history",
+    "title": "History",
+    "description": "Block that show history of company and etc.",
+    "editorStyle": [
+      "file:../../public/blocks/history/history.css"
+    ],
+    "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/history/preview.png"
+                    }
+    }
+  },
+    "icon": "media-archive",
+    "acf": {
+      "mode": "auto",
+      "renderTemplate": "history.php"
+    },
+    "supports": {}
+  }
+  

@@ -1,0 +1,12 @@
+{
+  "name": "acf/payment-methods",
+  "title": "Payment Methods",
+  "editorStyle": [
+    "file:../../public/blocks/payment-methods/payment-methods.css"
+  ],
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "payment-methods.php"
+  },
+  "supports": {}
+}

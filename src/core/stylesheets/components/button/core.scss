@@ -1,0 +1,97 @@
+.button {
+  @apply flex h-min items-center justify-center rounded-full transition;
+
+  gap: var(--button-gap, theme('spacing.2'));
+
+  height: var(--button-height, theme('spacing.8'));
+  padding-inline: var(--button-px, theme('spacing.4'));
+  padding-block: var(--button-py, theme('spacing.2'));
+
+  font: var(--button-font, var(--font-body-3));
+
+  > :where(svg, img) {
+    width: var(--button-icon-size, theme('spacing.4'));
+    height: var(--button-icon-size, theme('spacing.4'));
+  }
+
+  &:disabled,
+  &.disabled,
+  &[data-disabled='true'] {
+    @apply pointer-events-none cursor-auto;
+  }
+}
+
+.button-arrow {
+  @apply grid grid-flow-col items-center rounded-full transition encoded-chevron-right before:block before:size-full before:rounded-full before:bg-current before:transition-colors after:block after:size-full after:rounded-full after:border after:transition-colors;
+
+  gap: var(--button-gap, theme('spacing.2'));
+  grid-template-columns: repeat(2, auto);
+
+  height: var(--button-height, auto);
+  padding-inline: var(--button-px, 0);
+  padding-block: var(--button-py, 0);
+
+  font: var(--button-font, var(--font-body-3));
+
+  &::before,
+  &::after {
+    grid-area: var(--button-arrow-position, 1 / 2);
+
+    width: var(--button-arrow-size, var(--button-arrow-width, theme('spacing.6')));
+    height: var(--button-arrow-size, var(--button-arrow-height, theme('spacing.6')));
+  }
+
+  &::after {
+    border-color: var(--button-arrow-border, theme('colors.white'));
+
+    background-color: var(--button-arrow-bg, theme('colors.white'));
+  }
+
+  &::before {
+    color: var(--button-arrow-color, theme('colors.gray.DEFAULT'));
+    mask-position: center;
+    mask-size: var(--button-arrow-icon-size, theme('spacing.4'));
+    mask-image: var(--encoded-svg);
+    mask-repeat: no-repeat;
+  }
+
+  &.arrow-left {
+    --button-arrow-position: 1 / 1;
+  }
+
+  &:not(.arrow-left) &:disabled,
+  &.disabled,
+  &[data-disabled='true'] {
+    @apply pointer-events-none cursor-auto;
+  }
+}
+
+.button-icon {
+  @apply flex items-center justify-center rounded-full transition;
+
+  width: var(--button-size, theme('spacing.8'));
+  height: var(--button-size, theme('spacing.8'));
+
+  border-color: var(--button-border, theme('colors.blue.600'));
+
+  color: var(--button-color, theme('colors.blue.600'));
+  background-color: var(--button-bg, theme('colors.transparent'));
+
+  & > * {
+    width: var(--button-icon-size, theme('spacing.4'));
+    height: var(--button-icon-size, theme('spacing.4'));
+  }
+}
+
+.button-theme {
+  color: var(--button-color, theme('colors.blue.600'));
+  background-color: var(--button-bg, theme('colors.transparent'));
+  box-shadow: inset 0 0 0 1px var(--button-border, theme('colors.current'));
+}
+
+[class*='button-outlined'] {
+  &[class*='button-arrow'] {
+    --button-py: theme('spacing.0');
+    --button-px: theme('spacing.0');
+  }
+}

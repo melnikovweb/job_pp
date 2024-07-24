@@ -1,0 +1,24 @@
+{
+  "name": "acf/onboarding",
+  "title": "Onboarding block",
+  "description": "Block that show onboarding flow",
+  "editorStyle": [
+    "file:../../public/blocks/onboarding/onboarding.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/onboarding/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "onboarding.php"
+  },
+  "supports": {}
+}

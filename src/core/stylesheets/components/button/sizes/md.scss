@@ -1,0 +1,51 @@
+.button-md {
+  --button-px: theme('spacing.6');
+  --button-py: theme('spacing.0');
+  --button-font: var(--font-body-2);
+  --button-height: theme('spacing.10');
+  --button-icon-size: theme('spacing.6');
+
+  @apply button;
+
+  @media (screen('md')) {
+    --button-py: theme('spacing.3');
+    --button-height: theme('spacing.12');
+  }
+
+  @media (screen('xl')) {
+    --button-py: theme('spacing.4');
+    --button-height: theme('spacing.14');
+  }
+}
+
+.button-arrow-md {
+  --button-height: theme('spacing.10');
+  --button-arrow-icon-size: theme('spacing.6');
+  --button-gap: theme('spacing.4');
+  --button-px: theme('spacing.6') theme('spacing.1');
+  --button-py: theme('spacing.1');
+  --button-font: var(--font-body-2);
+  --button-arrow-width: calc(var(--button-height) - var(--button-py) * 2);
+  --button-arrow-height: 100%;
+
+  @apply button-arrow;
+
+  @media (screen('md')) {
+    --button-height: theme('spacing.12');
+  }
+
+  @media (screen('xl')) {
+    --button-height: theme('spacing.14');
+  }
+}
+
+.button-icon-md {
+  --button-size: theme('spacing.10');
+  --button-icon-size: theme('spacing.6');
+
+  @apply button-icon;
+
+  @media (screen('md')) {
+    --button-size: theme('spacing.12');
+  }
+}

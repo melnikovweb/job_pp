@@ -1,0 +1,26 @@
+{
+  "name": "acf/our-products",
+  "title": "Our products",
+  "description": "Block that show our products",
+  "editorStyle": [
+    "file:../../public/blocks/our-products/our-products.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/our-products/preview.png"
+                    }
+    }
+  },
+  "icon": "text",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "our-products.php"
+  },
+  "supports": {}
+}
+
+

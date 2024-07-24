@@ -1,0 +1,15 @@
+{
+  "name": "acf/available-countries",
+  "title": "Available countries",
+  "description": "Block with list of available countries",
+  "editorStyle": [
+    "file:../../public/blocks/available-countries/available-countries.css"
+  ],
+  "category": "design",
+  "icon": "dashicons-format-aside",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "available-countries.php"
+  },
+  "supports": {}
+}

@@ -1,0 +1,26 @@
+{
+  "name": "acf/simple-text-block",
+  "title": "Simple text block",
+  "description": "Simple text block.",
+  "editorStyle": [
+    "file:../../public/blocks/simple-text-block/simple-text-block.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/simple-text-block/preview.png"
+                    }
+    }
+  },
+  "icon": "text",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "simple-text-block.php"
+  },
+  "supports": {}
+}
+
+

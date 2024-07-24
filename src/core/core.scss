@@ -1,0 +1,9 @@
+@use 'stylesheets/libs';
+@use 'stylesheets/base';
+@use 'stylesheets/components';
+
+@layer core {
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+}

@@ -1,0 +1,5 @@
+@layer components {
+  .page-wrapper {
+    @apply relative grid min-h-dvh grid-rows-[auto_1fr_auto];
+  }
+}

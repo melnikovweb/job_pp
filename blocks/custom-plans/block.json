@@ -1,0 +1,24 @@
+{
+  "name": "acf/custom-plans",
+  "title": "Custom plans block",
+  "description": "Block that show custom plans",
+  "editorStyle": [
+    "file:../../public/blocks/custom-plans/custom-plans.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/custom-plans/preview.png"
+                    }
+    }
+  },
+  "icon": "quote",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "custom-plans.php"
+  },
+  "supports": {}
+}

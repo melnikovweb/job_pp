@@ -1,0 +1,35 @@
+.sp-form-outer {
+  .sp-form {
+    all: unset;
+
+    .sp-element-container {
+      @apply flex flex-col gap-4 md:flex-row md:gap-2;
+    }
+
+    .sp-message {
+      all: unset;
+
+      @apply text-white/60 font-b1;
+    }
+
+    .sp-field {
+      all: unset;
+
+      @apply border;
+
+      input {
+        all: unset;
+
+        @apply box-border size-full border-none p-4 text-white placeholder-white/60 font-b2;
+      }
+
+      button {
+        @apply text-[--button-color] [font:var(--button-font)];
+      }
+
+      &:has(input) {
+        @apply flex-grow overflow-hidden rounded-full border-solid border-white/60;
+      }
+    }
+  }
+}

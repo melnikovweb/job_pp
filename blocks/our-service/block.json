@@ -1,0 +1,24 @@
+{
+  "name": "acf/our-service",
+  "title": "Our service",
+  "description": "Block that show our service",
+  "editorStyle": [
+    "file:../../public/blocks/history/our-service.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/our-service/preview.png"
+                    }
+    }
+  },
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "our-service.php"
+  },
+  "supports": {}
+}

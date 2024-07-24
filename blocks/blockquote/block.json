@@ -1,0 +1,24 @@
+{
+  "name": "acf/blockquote",
+  "title": "Custom quote",
+  "description": "Block that show quote",
+  "editorStyle": [
+    "file:../../public/blocks/blockquote/blockquote.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/blockquote/preview.png"
+                    }
+    }
+  },
+  "icon": "quote",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "blockquote.php"
+  },
+  "supports": {}
+}

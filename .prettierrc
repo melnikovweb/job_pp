@@ -1,0 +1,30 @@
+{
+  "arrowParens": "always",
+  "bracketSameLine": true,
+  "bracketSpacing": true,
+  "semi": true,
+  "singleQuote": true,
+  "singleAttributePerLine": true,
+  "htmlWhitespaceSensitivity": "css",
+  "tabWidth": 2,
+  "useTabs": false,
+  "printWidth": 120,
+  "phpVersion": "8.2",
+  "trailingCommaPHP": false,
+  "plugins": [
+    "@prettier/plugin-php",
+    "prettier-plugin-tailwindcss"
+  ],
+  "overrides": [
+    {
+      "files": ".prettierrc",
+      "options": { "parser": "json" }
+    },
+    {
+      "files": "*.php",
+      "options": {
+        "parser": "php"
+      }
+    }
+  ]
+}

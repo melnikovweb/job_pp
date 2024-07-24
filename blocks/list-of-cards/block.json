@@ -1,0 +1,22 @@
+{
+    "name": "acf/list-of-cards",
+    "title": "List of cards",
+    "description": "Section with list of different cards.",
+    "editorStyle": [ "file:../../public/blocks/list-of-cards/list-of-cards.css" ],
+    "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/list-of-cards/preview.png"
+                    }
+    }
+  },
+    "icon": "index-card",
+    "acf": {
+        "mode": "auto",
+        "renderTemplate": "list-of-cards.php"
+    },
+    "supports": {}
+}

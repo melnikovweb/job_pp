@@ -1,0 +1,24 @@
+{
+  "name": "acf/video",
+  "title": "Video",
+  "description": "Block with video",
+  "editorStyle": [
+    "file:../../public/blocks/video/video.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/video/preview.png"
+                    }
+    }
+  },
+  "icon": "table-col-before",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "video.php"
+  },
+  "supports": {}
+}

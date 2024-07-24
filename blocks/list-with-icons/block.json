@@ -1,0 +1,23 @@
+{
+  "name": "acf/list-with-icons",
+  "title": "List with icons",
+  "description": "Section with list of icons.",
+  "editorStyle": [
+    "file:../../public/blocks/list-with-icons/list-with-icons.css"
+  ],
+  "category": "SECRET-category",
+  "icon": "list-view",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "list-with-icons.php"
+  },
+  "supports": {},
+  "example": {
+    "attributes" : {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "/blocks/list-with-icons/preview.png"
+    }
+    }
+  }
+}

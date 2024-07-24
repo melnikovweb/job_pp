@@ -1,0 +1,26 @@
+{
+  "name": "acf/about-us-block",
+  "title": "About us block",
+  "description": "About us block",
+  "editorStyle": [
+    "file:../../public/blocks/about-us-block/about-us-block.css"
+  ],
+  "category": "SECRET-category",
+ 
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/about-us-block/preview.png"
+                    }
+    }
+  },
+  
+  "icon": "media-archive",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "about-us-block.php"
+  },
+  "supports": {}
+}

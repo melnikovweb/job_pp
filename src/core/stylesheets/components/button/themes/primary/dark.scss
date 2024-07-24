@@ -1,0 +1,20 @@
+.button-primary-dark {
+  --button-border: theme('colors.blue.DEFAULT');
+  --button-color: theme('colors.white');
+  --button-bg: theme('colors.blue.DEFAULT');
+
+  @apply button-theme;
+
+  &:hover {
+    --button-border: theme('colors.blue.DEFAULT');
+    --button-bg: theme('colors.gray.DEFAULT');
+  }
+
+  &.disabled,
+  &:disabled,
+  &[data-disabled='true'] {
+    --button-border: theme('colors.gray.400');
+    --button-bg: theme('colors.gray.400');
+    --button-arrow-color: theme('colors.gray.400');
+  }
+}

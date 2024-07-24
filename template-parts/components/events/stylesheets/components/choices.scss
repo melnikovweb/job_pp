@@ -1,0 +1,27 @@
+.choices {
+  $self: &;
+
+  --choices-rounded: 100vmax;
+
+  &__inner {
+    @apply inline-flex h-auto min-h-11 flex-wrap items-center rounded-md py-1 md:min-h-12 xl:min-h-13;
+
+    &:has(#{$self}__list:not(:empty)) {
+      @apply gap-2;
+    }
+  }
+
+  &__list {
+    &--multiple {
+      @apply contents;
+    }
+  }
+
+  &__input {
+    @apply m-0 inline-block max-w-full border-none bg-transparent px-0 font-b2;
+
+    box-shadow: none;
+
+    vertical-align: baseline;
+  }
+}

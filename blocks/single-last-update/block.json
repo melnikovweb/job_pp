@@ -1,0 +1,22 @@
+{
+    "name": "acf/single-last-update",
+    "title": "Single last update",
+    "description": "The block that show last single update date.",
+    "editorStyle": [ "file:../../public/blocks/single-last-update/single-last-update.css" ],
+    "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/single-last-update/preview.png"
+                    }
+    }
+  },
+    "icon": "clock",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "single-last-update.php"
+    },
+    "supports": {}
+}

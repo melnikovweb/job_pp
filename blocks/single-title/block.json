@@ -1,0 +1,22 @@
+{
+    "name": "acf/single-title",
+    "title": "Single title",
+    "description": "Single title of.",
+    "editorStyle": [ "file:../../public/blocks/single-title/single-title.css" ],
+    "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/single-title/preview.png"
+                    }
+    }
+  },
+    "icon": "heading",
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "single-title.php"
+    },
+    "supports": {}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "acf/trustpilot",
+  "title": "Trustpilot block",
+  "description": "Block that show trustpilot comments",
+  "editorStyle": [
+    "file:../../public/blocks/trustpilot/trustpilot.css"
+  ],
+  "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/trustpilot/preview.png"
+                    }
+    }
+  },
+  "icon": "table-col-before",
+  "acf": {
+    "mode": "auto",
+    "renderTemplate": "trustpilot.php"
+  },
+  "supports": {}
+}

@@ -1,0 +1,132 @@
+.wpcf7 {
+  form {
+    @apply flex flex-col gap-y-4 rounded-xs md:gap-y-6 md:rounded-sm md:p-10 xl:rounded-lg;
+
+    padding: var(--form-padding, theme('spacing.4'));
+
+    background-color: var(--form-color, theme('colors.gray.200'));
+
+    .wpcf7-response-output {
+      @apply hidden;
+    }
+
+    &[data-status='invalid'] .wpcf7-response-output,
+    &[data-status='sent'] .wpcf7-response-output {
+      @apply block;
+    }
+
+    @media (screen('md')) {
+      padding: var(--form-padding, theme('spacing.6'));
+    }
+
+    @media (screen('xl')) {
+      padding: var(--form-padding, theme('spacing.10'));
+    }
+  }
+
+  .wpcf7-form-control-wrap {
+    @apply mt-1 block;
+
+    > input {
+      @apply h-11 w-full rounded-2xs px-4 text-gray placeholder-gray outline-offset-2 font-b2 md:h-12 xl:h-13;
+
+      border: 1px solid theme('colors.gray.800');
+
+      &.wpcf7-not-valid,
+      &.form-input-not-valid {
+        border-color: theme('colors.red.DEFAULT');
+        outline: 2px solid theme('colors.red.100');
+        outline-offset: 2px;
+      }
+
+      &:focus {
+        border-color: theme('colors.blue.600');
+        outline: 2px solid theme('colors.blue.100');
+      }
+    }
+  }
+
+  textarea {
+    @apply h-28 w-full resize-none rounded-2xs rounded-2xs px-4 text-gray placeholder-gray font-b2;
+
+    &.wpcf7-not-valid,
+    &.form-input-not-valid {
+      border: 1px solid theme('colors.red.DEFAULT');
+      outline: 2px solid theme('colors.red.100');
+      outline-offset: 2px;
+    }
+
+    &:focus {
+      border: 1px solid theme('colors.blue.600');
+      outline: 2px solid theme('colors.blue.100');
+      outline-offset: 2px;
+    }
+  }
+
+  input[type='file'] {
+    @apply sr-only absolute size-0 overflow-hidden border-0 p-0;
+  }
+
+  label {
+    @apply block text-gray font-b2;
+  }
+
+  div {
+    @apply text-gray font-b2;
+  }
+
+  .file-title {
+    @apply mb-2 block text-gray font-b2;
+
+    span {
+      @apply text-blue-600;
+    }
+  }
+
+  .wpcf7-radio {
+    @apply mt-2 flex flex-wrap gap-2 md:mt-4;
+
+    label {
+      @apply block;
+    }
+  }
+
+  input[type='radio'] {
+    @apply absolute size-0 overflow-hidden border-0 p-0 [box-shadow:none];
+
+    & + span {
+      @apply block cursor-pointer rounded-sm border border-blue px-3 py-2 font-b2;
+    }
+
+    &:checked {
+      & + span {
+        @apply bg-blue text-white;
+      }
+    }
+  }
+
+  .screen-reader-response {
+    @apply absolute size-0 overflow-hidden border-0 p-0;
+  }
+
+  .file-text {
+    @apply mb-1 block text-blue-600 font-b3;
+  }
+
+  .file-description {
+    @apply text-gray-400 font-b3;
+  }
+
+  .file-name {
+    @apply mb-2 block font-b3;
+  }
+
+  .wpcf7-not-valid-tip,
+  .error-message {
+    @apply block pl-4 pt-1 text-red font-b4;
+  }
+
+  button {
+    @apply self-start;
+  }
+}

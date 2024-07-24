@@ -1,0 +1,24 @@
+{
+    "name": "acf/people-images",
+    "title": "People images",
+    "description": "Block with images of people, names and positions",
+    "editorStyle": [
+      "file:../../public/blocks/people-image/people-images.css"
+    ],
+    "category": "SECRET-category",
+  "example": {
+    "viewportWidth": 1024,
+    "attributes": {
+                    "mode": "preview",
+                    "data": {
+                        "preview_image_help": "/blocks/people-images/preview.png"
+                    }
+    }
+  },
+    "icon": "table-col-before",
+    "acf": {
+      "mode": "auto",
+      "renderTemplate": "people-images.php"
+    },
+    "supports": {}
+  }

@@ -1,0 +1,101 @@
+@layer base {
+  :root {
+    --font-basic: 'Poppins', sans-serif;
+    --font-size-headline-1: 20px;
+    --font-size-headline-2: 18px;
+    --font-size-headline-3: 16px;
+    --font-size-headline-4: 16px;
+    --font-size-headline-5: 16px;
+    --font-size-title-1: 16px;
+    --font-size-title-2: 14px;
+    --font-size-title-3: 14px;
+    --font-size-title-4: 14px;
+    --font-size-body-1: 14px;
+    --font-size-body-2: 12px;
+    --font-size-body-3: 12px;
+    --font-size-body-4: 12px;
+    --font-size-body-5: 12px;
+    --font-size-additional-1: 40px;
+    --font-headline-1: 400 var(--font-size-headline-1) / 32px var(--font-basic);
+    --font-headline-2: 400 var(--font-size-headline-2) / 30px var(--font-basic);
+    --font-headline-3: 400 var(--font-size-headline-3) / 28px var(--font-basic);
+    --font-headline-4: 400 var(--font-size-headline-4) / 28px var(--font-basic);
+    --font-headline-5: 400 var(--font-size-headline-5) / 28px var(--font-basic);
+    --font-title-1: 500 var(--font-size-title-1) / 28px var(--font-basic);
+    --font-title-2: 500 var(--font-size-title-2) / 22px var(--font-basic);
+    --font-title-3: 500 var(--font-size-title-3) / 22px var(--font-basic);
+    --font-title-4: 500 var(--font-size-title-4) / 22px var(--font-basic);
+    --font-body-1: 400 var(--font-size-body-1) / 22px var(--font-basic);
+    --font-body-2: 400 var(--font-size-body-2) / 16px var(--font-basic);
+    --font-body-3: 400 var(--font-size-body-3) / 16px var(--font-basic);
+    --font-body-4: 400 var(--font-size-body-4) / 16px var(--font-basic);
+    --font-body-5: 400 var(--font-size-body-5) / 16px var(--font-basic);
+    --font-additional-1: 400 var(--font-size-additional-1) / 60px var(--font-basic);
+
+    @media (screen(sm)) {
+      --font-size-headline-1: 40px;
+      --font-size-headline-2: 32px;
+      --font-size-headline-3: 28px;
+      --font-size-headline-4: 24px;
+      --font-size-headline-5: 20px;
+      --font-size-title-1: 20px;
+      --font-size-title-2: 18px;
+      --font-size-title-3: 16px;
+      --font-size-title-4: 14px;
+      --font-size-body-1: 14px;
+      --font-size-body-2: 14px;
+      --font-size-body-3: 12px;
+      --font-size-body-4: 12px;
+      --font-size-body-5: 10px;
+      --font-size-additional-1: 72px;
+      --font-headline-1: 400 var(--font-size-headline-1) / 60px var(--font-basic);
+      --font-headline-2: 400 var(--font-size-headline-2) / 50px var(--font-basic);
+      --font-headline-3: 400 var(--font-size-headline-3) / 48px var(--font-basic);
+      --font-headline-4: 400 var(--font-size-headline-4) / 44px var(--font-basic);
+      --font-headline-5: 400 var(--font-size-headline-5) / 40px var(--font-basic);
+      --font-title-1: 500 var(--font-size-title-1) / 40px var(--font-basic);
+      --font-title-2: 500 var(--font-size-title-2) / 30px var(--font-basic);
+      --font-title-3: 500 var(--font-size-title-3) / 28px var(--font-basic);
+      --font-title-4: 500 var(--font-size-title-4) / 22px var(--font-basic);
+      --font-body-1: 400 var(--font-size-body-1) / 22px var(--font-basic);
+      --font-body-2: 400 var(--font-size-body-2) / 22px var(--font-basic);
+      --font-body-3: 400 var(--font-size-body-3) / 16px var(--font-basic);
+      --font-body-4: 400 var(--font-size-body-4) / 16px var(--font-basic);
+      --font-body-5: 400 var(--font-size-body-5) / 12px var(--font-basic);
+      --font-additional-1: 400 var(--font-size-additional-1) / 110px var(--font-basic);
+    }
+
+    @media (screen(lg)) {
+      --font-size-headline-1: 52px;
+      --font-size-headline-2: 48px;
+      --font-size-headline-3: 40px;
+      --font-size-headline-4: 32px;
+      --font-size-headline-5: 24px;
+      --font-size-title-1: 24px;
+      --font-size-title-2: 18px;
+      --font-size-title-3: 16px;
+      --font-size-title-4: 14px;
+      --font-size-body-1: 18px;
+      --font-size-body-2: 16px;
+      --font-size-body-3: 14px;
+      --font-size-body-4: 12px;
+      --font-size-body-5: 10px;
+      --font-size-additional-1: 92px;
+      --font-headline-1: 400 var(--font-size-headline-1) / 76px var(--font-basic);
+      --font-headline-2: 400 var(--font-size-headline-2) / 70px var(--font-basic);
+      --font-headline-3: 400 var(--font-size-headline-3) / 60px var(--font-basic);
+      --font-headline-4: 400 var(--font-size-headline-4) / 50px var(--font-basic);
+      --font-headline-5: 400 var(--font-size-headline-5) / 44px var(--font-basic);
+      --font-title-1: 500 var(--font-size-title-1) / 44px var(--font-basic);
+      --font-title-2: 500 var(--font-size-title-2) / 36px var(--font-basic);
+      --font-title-3: 500 var(--font-size-title-3) / 28px var(--font-basic);
+      --font-title-4: 500 var(--font-size-title-4) / 22px var(--font-basic);
+      --font-body-1: 400 var(--font-size-body-1) / 36px var(--font-basic);
+      --font-body-2: 400 var(--font-size-body-2) / 28px var(--font-basic);
+      --font-body-3: 400 var(--font-size-body-3) / 22px var(--font-basic);
+      --font-body-4: 400 var(--font-size-body-4) / 16px var(--font-basic);
+      --font-body-5: 400 var(--font-size-body-5) / 12px var(--font-basic);
+      --font-additional-1: 400 var(--font-size-additional-1) / 140px var(--font-basic);
+    }
+  }
+}
